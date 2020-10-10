@@ -1,5 +1,5 @@
 <template lang="pug">
-  span Header
+  header
 </template>
 
 <script>
