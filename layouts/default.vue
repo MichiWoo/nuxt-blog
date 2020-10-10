@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  div.flex.flex-col.h-screen
     Header
     Nuxt
     Footer
