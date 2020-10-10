@@ -17,7 +17,8 @@ export default {
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxtjs/fontawesome',
   ],
   modules: [
     '@nuxt/content'
@@ -29,5 +30,11 @@ export default {
   },
   purgeCSS: {
     whitelist: ['dark-mode']
-  }
+  },
+  fontawesome: {
+    icons: {
+      solid: true,
+      brands: true,
+    },
+  },
 }
