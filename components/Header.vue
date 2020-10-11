@@ -27,9 +27,6 @@
           li
             NuxtLink(class='border-b-2 font-bold border-transparent border-b-transparent text-light-danger hover:text-light-primary hover:border-light-primary dark:text-dark-accent dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out' to='/acerca')
               | Acerca
-          li
-            NuxtLink(class='border-b-2 font-bold border-transparent border-b-transparent text-light-danger hover:text-light-primary hover:border-light-primary dark:text-dark-accent dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out' to='/uso')
-              | Yo uso
           div(class='flex-1 block sm:hidden')
           li
             NuxtLink(class='bg-transparent text-light-danger dark:text-dark-danger font-semibold py-2 px-4 border-2 border-light-danger dark:border-dark-danger transition transition-all duration-200 rounded-lg hover:border-transparent hover:bg-light-danger dark-hover:bg-dark-danger hover:text-light-accent dark-hover:text-dark-primary get-in-touch text-base sm:text-base' to='contacto')
@@ -53,12 +50,6 @@
               font-awesome-icon(:icon="['far', 'question-circle']")
             div
               | Acerca
-        li(class='nav-bar-bottom-item text-light-accent dark:text-dark-accent font-bold')
-          NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/uso')
-            div
-              font-awesome-icon(:icon="['fas', 'laptop-code']")
-            div
-              | Yo uso
         li(class='nav-bar-bottom-item text-light-accent dark:text-dark-accent font-bold')
           NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/contacto')
             div

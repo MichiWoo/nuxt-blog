@@ -1,15 +1,15 @@
 <template lang="pug">
   div(class='home max-w-full md:max-w-screen-md mx-auto xl:max-w-screen-lg px-5 pb-24 sm:pb-0 w-full mx-auto flex-1 mb-24 sm:mb-0')
-    h1(class='text-2xl font-bold mb-2 mt-8')
+    h1(class='text-2xl font-bold mb-2 mt-8 text-light-primary dark:text-dark-accent')
       | Hola, soy Michel&nbsp
       span(class='saludo' aria-hidden='true')
         | 👋
       br
       | y yo&nbsp
-      Heart(class='text-light-primary dark:text-dark-primary')
+      Heart(class='text-light-secondary dark:text-dark-secondary')
       | &nbspel desarrollo web.
     Frontend(class='w-full')
-    p(class='text-base mb-8 mt-4 text-light-secondary dark:text-dark-secondary')
+    p(class='text-base mb-8 mt-4 text-light-secondary dark:text-dark-accent')
       | Soy un desarrollador web&nbsp
       strong full-stack,
       | &nbspvivo en México&nbsp
@@ -19,14 +19,14 @@
       b Javascript, Vue, Nuxt,
       | &nbspno obstante también he trabajo con&nbsp
       b PHP, C# y Node.
-    p(class='text-base mb-8 mt-4 text-light-secondary dark:text-dark-secondary')
-      | Te invito a 
-      NuxtLint(to='contacto')
+    p(class='text-base mb-8 mt-4 text-light-secondary dark:text-dark-accent')
+      | Te invito a
+      NuxtLink(to='contacto')
         strong(class='text-light-primary dark:text-dark-primary cursor-pointer')
-          | contactarme 
-      | &nbspsi necesitas desarrollar alguna página o aplicación web, o si quieres saber un poco 
+          | contactarme
+      | &nbspsi necesitas desarrollar alguna página o aplicación web, o si quieres saber un poco
       NuxtLink(to='acerca')
-        strong(class='text-light-primary dark:text-dark-primary cursor-pointer') 
+        strong(class='text-light-primary dark:text-dark-primary cursor-pointer')
           | más de mi
       | &nbspno dudes en hacerlo.
 </template>

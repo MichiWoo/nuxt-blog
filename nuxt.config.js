@@ -18,7 +18,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
-    '@nuxtjs/fontawesome',
+    '@nuxtjs/fontawesome'
   ],
   modules: [
     '@nuxt/content'
@@ -35,7 +35,7 @@ export default {
     icons: {
       solid: true,
       brands: true,
-      regular: true,
-    },
-  },
+      regular: true
+    }
+  }
 }

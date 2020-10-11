@@ -10,10 +10,10 @@
   @apply bg-light text-dark;
 }
 
-.light-mode .nuxt-link-active {
+.light-mode .nuxt-link-exact-active {
   @apply text-light-primary;
 }
 
-.dark-mode .nuxt-link-active {
+.dark-mode .nuxt-link-exact-active {
   @apply text-dark-primary;
 }
