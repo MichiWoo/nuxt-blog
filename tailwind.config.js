@@ -26,16 +26,22 @@ module.exports = {
       'dark-even',
       'dark-odd',
       'hover',
-      'responsive'
+      'responsive',
+      'group-hover',
+      'even',
+      'odd'
     ],
     borderColor: [
       'dark',
+      'dark-hover',
       'dark-focus',
+      'dark-active',
       'dark-focus-within',
       'hover',
-      'responsive'
+      'responsive',
+      'group-hover'
     ],
-    textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive']
+    textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'group-hover']
   },
   plugins: [require('tailwindcss-dark-mode')()]
 }

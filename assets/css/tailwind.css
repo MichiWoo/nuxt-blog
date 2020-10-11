@@ -9,3 +9,11 @@
 .light-mode body {
   @apply bg-light;
 }
+
+.light-mode .nuxt-link-active {
+  @apply text-light-primary;
+}
+
+.dark-mode .nuxt-link-active {
+  @apply text-dark-primary;
+}
