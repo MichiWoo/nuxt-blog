@@ -22,10 +22,10 @@
             button(class='text-dark-accent transition-colors duration-300 ease-linear focus:outline-none dark-hover:text-dark-primary' @click="toggle" v-show="color === 'dark'")
               Sun
           li
-            NuxtLink(class='border-b-2 font-bold border-transparent border-b-transparent text-light-danger hover:text-light-primary hover:border-light-primary dark:text-dark-accent dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out' to='/blog')
+            NuxtLink(class='border-b-2 font-bold border-transparent border-b-transparent text-light-danger hover:text-light-primary hover:border-light-primary dark:text-dark-accent dark-hover:border-dark-secondary dark-hover:text-dark-primary text-base transition-all transition-duration-300 transition duration-500 ease-in-out' to='/blog')
               | Blog
           li
-            NuxtLink(class='border-b-2 font-bold border-transparent border-b-transparent text-light-danger hover:text-light-primary hover:border-light-primary dark:text-dark-accent dark-hover:border-dark-secondary text-base transition-all transition-duration-300 transition duration-500 ease-in-out' to='/acerca')
+            NuxtLink(class='border-b-2 font-bold border-transparent border-b-transparent text-light-danger hover:text-light-primary hover:border-light-primary dark:text-dark-accent dark-hover:border-dark-secondary dark-hover:text-dark-primary text-base transition-all transition-duration-300 transition duration-500 ease-in-out' to='/acerca')
               | Acerca
           div(class='flex-1 block sm:hidden')
           li

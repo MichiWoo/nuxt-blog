@@ -1,13 +1,13 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 .dark-mode body {
-  @apply bg-dark text-light;
+  @apply bg-dark;
 }
 
 .light-mode body {
-  @apply bg-light text-dark;
+  @apply bg-light;
 }
 
 .light-mode .nuxt-link-exact-active {
