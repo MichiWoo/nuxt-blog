@@ -1,10 +1,80 @@
 <template lang="pug">
-  main.min-h-screen.flex.justify-center.items-center.text-center.mx-auto
-    span algo
+  div(class='home max-w-full md:max-w-screen-md mx-auto xl:max-w-screen-lg px-5 pb-24 sm:pb-0 w-full mx-auto flex-1 mb-24 sm:mb-0')
+    h1(class='text-2xl font-bold mb-2 mt-8')
+      | Hola, soy Michel&nbsp
+      span(class='saludo' aria-hidden='true')
+        | 👋
+      br
+      | y yo&nbsp
+      Heart(class='text-light-primary dark:text-dark-primary')
+      | &nbspel desarrollo web.
+    Frontend(class='w-full')
+    p(class='text-base mb-8 mt-4 text-light-secondary dark:text-dark-secondary')
+      | Soy un desarrollador web&nbsp
+      strong full-stack,
+      | &nbspvivo en México&nbsp
+      span(role='emoji' aria-label='emoji')
+        | 🇲🇽
+      | , en el bello estado de Veracruz. Me apasionan las tencologías web, con las que más he trabajado son&nbsp
+      b Javascript, Vue, Nuxt,
+      | &nbspno obstante también he trabajo con&nbsp
+      b PHP, C# y Node.
+    p(class='text-base mb-8 mt-4 text-light-secondary dark:text-dark-secondary')
+      | Te invito a 
+      NuxtLint(to='contacto')
+        strong(class='text-light-primary dark:text-dark-primary cursor-pointer')
+          | contactarme 
+      | &nbspsi necesitas desarrollar alguna página o aplicación web, o si quieres saber un poco 
+      NuxtLink(to='acerca')
+        strong(class='text-light-primary dark:text-dark-primary cursor-pointer') 
+          | más de mi
+      | &nbspno dudes en hacerlo.
 </template>
 
 <script>
-export default {}
+export default {
+  components: {
+    Heart: () => import('../components/icons/Heart'),
+    Frontend: () => import('../components/images/Frontend')
+  }
+}
 </script>
 
-<style></style>
+<style scoped>
+.saludo {
+  -webkit-animation-name: move-hand;
+  animation-name: move-hand;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+@keyframes move-hand {
+  0% {
+      transform: rotate(0);
+  }
+  10% {
+      transform: rotate(14deg);
+  }
+  20% {
+      transform: rotate(-8deg);
+  }
+  30% {
+      transform: rotate(14deg);
+  }
+  40% {
+      transform: rotate(-4deg);
+  }
+  50% {
+      transform: rotate(10deg);
+  }
+  60% {
+      transform: rotate(0);
+  }
+  100% {
+      transform: rotate(0);
+  }
+}
+</style>
