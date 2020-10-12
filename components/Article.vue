@@ -1,12 +1,12 @@
 <template lang="pug">
-  div
-    NuxtLink(class='text-light-primary' to='article.path')
-      h3(class="inline rounded-tl rounded-br bg-gradient-to-r from-light via-light-accent to-light-danger dark:from-dark dark:via-dark-accent dark:to-dark-danger font-bold leading-tight text-light-primary dark:text-dark-accent")
+  div(class='my-10')
+    NuxtLink(class='text-light-primary dark:text-dark-primary' to='article.path')
+      h3(class="text-2xl inline rounded-tl rounded-br bg-gradient-to-r from-light via-light-accent to-light-danger dark:from-dark-accent dark:via-dark dark:to-dark font-bold leading-tight text-light-primary dark:text-dark-secondary")
         | {{ article.title }}
       div
-        h5(class="inline font-bold text-light-primary dark:text-dark-accent")
+        h5(class="inline font-bold text-light-accent dark:text-dark-accent")
           |  {{ formatDate(article.createdAt) }}
-        h5(class="inline text-light-primary dark:text-dark-accent") - 1 min read
+        h5(class="inline text-light-accent dark:text-dark-accent") - 1 min read
       p(class="p-0mb-5 text-light-primary dark:text-dark-accent")
         | {{ article.description }}
 </template>

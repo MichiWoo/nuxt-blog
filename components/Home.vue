@@ -9,7 +9,7 @@
       Hearth(class='text-light-secondary dark:text-dark-secondary')
       | &nbspel desarrollo web.
     Frontend(class='w-full')
-    p(class='text-base mb-8 mt-4 text-light-secondary dark:text-dark-accent')
+    p(class='text-base mb-8 mt-4 text-light-primary dark:text-dark-accent')
       | Soy un desarrollador web&nbsp
       strong full-stack,
       | &nbspvivo en México&nbsp
@@ -19,7 +19,7 @@
       b Javascript, Vue, Nuxt,
       | &nbspno obstante también he trabajo con&nbsp
       b PHP, C# y Node.
-    p(class='text-base mb-8 mt-4 text-light-secondary dark:text-dark-accent')
+    p(class='text-base mb-8 mt-4 text-light-primary dark:text-dark-accent')
       | Te invito a
       NuxtLink(to='contacto')
         strong(class='text-light-primary dark:text-dark-primary cursor-pointer')
