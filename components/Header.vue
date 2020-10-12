@@ -11,16 +11,16 @@
                 | Michiwoo
           li(class='sm:hidden')
             button(class='text-light-primary transition-colors duration-300 ease-linear focus:outline-none' @click="toggle" v-show="color === 'light'")
-              Moon
+              font-awesome-icon(:icon="['fas', 'moon']")
             button(class='text-dark-primary transition-colors duration-300 ease-linear focus:outline-none' @click="toggle" v-show="color === 'dark'")
-              Sun
+              font-awesome-icon(:icon="['fas', 'sun']")
         div(class='flex-1 hidden sm:block')
         ul(class='top-navigation hidden items-center flex-wrap space-x-4 sm:space-x-6 mt-6 sm:mt-0 hidden sm:flex')
           li
             button(class='text-light-accent transition-colors duration-300 ease-linear focus:outline-none hover:text-light-primary' @click="toggle" v-show="color === 'light'")
-              Moon
+              font-awesome-icon(:icon="['fas', 'moon']")
             button(class='text-dark-accent transition-colors duration-300 ease-linear focus:outline-none dark-hover:text-dark-primary' @click="toggle" v-show="color === 'dark'")
-              Sun
+              font-awesome-icon(:icon="['fas', 'sun']")
           li
             NuxtLink(class='border-b-2 font-bold border-transparent border-b-transparent text-light-danger hover:text-light-primary hover:border-light-primary dark:text-dark-accent dark-hover:border-dark-secondary dark-hover:text-dark-primary text-base transition-all transition-duration-300 transition duration-500 ease-in-out' to='/blog')
               | Blog
@@ -47,7 +47,7 @@
         li(class='nav-bar-bottom-item text-light-accent dark:text-dark-accent font-bold')
           NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/acerca')
             div
-              font-awesome-icon(:icon="['far', 'question-circle']")
+              font-awesome-icon(:icon="['fas', 'question-circle']")
             div
               | Acerca
         li(class='nav-bar-bottom-item text-light-accent dark:text-dark-accent font-bold')
@@ -61,10 +61,6 @@
 <script>
 export default {
   name: 'Header',
-  components: {
-    Sun: () => import('../components/icons/Sun'),
-    Moon: () => import('../components/icons/Moon')
-  },
   data () {
     return {
       color: this.$colorMode.value

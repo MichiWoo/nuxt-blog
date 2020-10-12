@@ -6,7 +6,7 @@
         | 👋
       br
       | y yo&nbsp
-      Hearth(class='text-light-secondary dark:text-dark-secondary')
+      font-awesome-icon(:icon="['fas', 'heart']" class='text-light-secondary dark:text-dark-secondary')
       | &nbspel desarrollo web.
     Frontend(class='w-full')
     p(class='text-base mb-8 mt-4 text-light-primary dark:text-dark-accent')
@@ -29,16 +29,14 @@
         strong(class='text-light-primary dark:text-dark-primary cursor-pointer')
           | &nbspmás de mi
       | &nbspno dudes en hacerlo.
-    ListArticles(:config="config" :articles="articles")
+    ListArticles(:config="config" :articles="articles" :verMensaje="isHome")
 </template>
 
 <script>
 export default {
   name: 'Home',
   components: {
-    Hearth: () => import('../components/icons/Hearth'),
-    Frontend: () => import('../components/images/Frontend'),
-    ListArticles: () => import('../components/ListArticles')
+    Frontend: () => import('../components/images/Frontend')
   },
   props: {
     articles: {
@@ -50,7 +48,8 @@ export default {
     return {
       config: {
         title: 'Algunos de mis escritos:'
-      }
+      },
+      isHome: true
     }
   }
 }
