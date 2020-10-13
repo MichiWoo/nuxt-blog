@@ -26,6 +26,22 @@
   fill: #3adbb9;
 }
 
+.light-mode .fill-logo {
+  fill: #7009f6;
+}
+
+.dark-mode .fill-logo {
+  fill: #d0fff9;
+}
+
+.light-mode .fill-eyes {
+  fill: #7009f6;
+}
+
+.dark-mode .fill-eyes {
+  fill: #3adbb9;
+}
+
 .nuxt-content-highlight {
   @apply relative;
 }
@@ -53,5 +69,5 @@
 }
 
 .dark-mode .nuxt-content h2 {
-  @apply mt-8 mb-4 text-dark-accent text-lg font-bold transition-all duration-300 ease-in-out text-xl;
+  @apply mt-8 mb-4 text-dark-primary text-lg font-bold transition-all duration-300 ease-in-out text-xl;
 }

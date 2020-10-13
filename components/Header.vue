@@ -6,7 +6,7 @@
           li
             NuxtLink(class='flex items-center text-light-primary dark:text-dark-accent font-bold text-lg mr-6 nuxt-link-exact-active nuxt-link-active' to='/')
               div(class='responsive-image-container overflow-hidden inline-block w-10 h-10 mr-2 rounded-full border-2 border-light-primary dark:border-dark-primary')
-                img(class='object-cover responsive-image-placeholder pt-2' src='icon.png' alt='Imagen Logo de Michiwoo')
+                Logo(class='object-cover responsive-image-placeholder pt-2' alt='Imagen Logo de Michiwoo')
               span
                 | Michiwoo
           li(class='sm:hidden')
@@ -61,6 +61,9 @@
 <script>
 export default {
   name: 'Header',
+  components: {
+    Logo: () => import('../components/Logo')
+  },
   data () {
     return {
       color: this.$colorMode.value

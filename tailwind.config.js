@@ -10,7 +10,7 @@ module.exports = {
         danger: '#a68aff'
       },
       dark: {
-        default: '#2d3748',
+        default: '#1a202c',
         primary: '#3adbb9',
         secondary: '#29998b',
         accent: '#d0fff9',
