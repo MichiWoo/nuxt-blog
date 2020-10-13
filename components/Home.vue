@@ -5,7 +5,7 @@
       span(class='saludo' aria-hidden='true')
         | 👋
       br
-      | y yo&nbsp
+      | y&nbsp
       font-awesome-icon(:icon="['fas', 'heart']" class='text-light-secondary dark:text-dark-secondary')
       | &nbspel desarrollo web.
     Frontend(class='w-full')
@@ -16,7 +16,9 @@
       span(role='emoji' aria-label='emoji')
         | 🇲🇽
       | , en el bello estado de Veracruz. Me apasionan las tencologías web, con las que más he trabajado son&nbsp
-      b Javascript, Vue, Nuxt,
+      b Javascript, Vue, Nuxt, React
+      | &nbspy un poco de
+      b &nbspSvelte
       | &nbspno obstante también he trabajo con&nbsp
       b PHP, C# y Node.
     p(class='text-base mb-8 mt-4 text-light-primary dark:text-dark-accent')
