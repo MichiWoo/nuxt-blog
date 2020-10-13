@@ -17,3 +17,41 @@
 .dark-mode .nuxt-link-exact-active {
   @apply text-dark-primary;
 }
+
+.light-mode .fill-accent {
+  fill: #7009f6;
+}
+
+.dark-mode .fill-accent {
+  fill: #3adbb9;
+}
+
+.nuxt-content-highlight {
+  @apply relative;
+}
+
+.nuxt-content-highlight .filename {
+  @apply absolute right-0 text-light-accent font-light z-10 mr-2 mt-1 text-sm;
+}
+
+.dark-mode .nuxt-content-highlight .filename {
+  @apply absolute right-0 text-dark-accent font-light z-10 mr-2 mt-1 text-sm;
+}
+
+.nuxt-content p {
+  @apply mb-8 text-justify text-base text-light-secondary;
+  font-size: 1.2rem;
+}
+
+.dark-mode .nuxt-content p {
+  @apply mb-8 text-justify text-base text-dark-accent;
+  font-size: 1.2rem;
+}
+
+.nuxt-content h2 {
+  @apply mt-8 mb-4 text-light-primary text-lg font-bold transition-all duration-300 ease-in-out text-xl;
+}
+
+.dark-mode .nuxt-content h2 {
+  @apply mt-8 mb-4 text-dark-accent text-lg font-bold transition-all duration-300 ease-in-out text-xl;
+}

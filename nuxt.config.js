@@ -23,7 +23,13 @@ export default {
   modules: [
     '@nuxt/content'
   ],
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    }
+  },
   build: {},
   tailwindcss: {
     exposeConfig: true
