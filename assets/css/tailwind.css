@@ -18,6 +18,14 @@
   @apply text-dark-primary;
 }
 
+.light-mode .nuxt-link-active {
+  @apply text-light-primary;
+}
+
+.dark-mode .nuxt-link-active {
+  @apply text-dark-primary;
+}
+
 .light-mode .fill-accent {
   fill: #7009f6;
 }
@@ -55,13 +63,11 @@
 }
 
 .nuxt-content p {
-  @apply mb-8 text-justify text-base text-light-secondary;
-  font-size: 1.2rem;
+  @apply mb-8 text-justify text-sm text-light-secondary;
 }
 
 .dark-mode .nuxt-content p {
-  @apply mb-8 text-justify text-base text-dark-accent;
-  font-size: 1.2rem;
+  @apply mb-8 text-justify text-sm text-dark-accent;
 }
 
 .nuxt-content h2 {

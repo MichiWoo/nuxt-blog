@@ -1,5 +1,5 @@
 <template lang="pug">
-  div.flex.justify-between
+  div.flex.justify-between.mb-16
     NuxtLink(v-if='prev' :to="{ name: 'blog-slug', params: { slug: prev.slug } }" class='hover:underline text-light-danger dark:text-dark-danger font-bold')
       font-awesome-icon(:icon="['fas', 'angle-left']")
       | &nbsp

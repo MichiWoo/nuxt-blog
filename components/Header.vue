@@ -33,7 +33,7 @@
               | Contáctame
       ul(class='bottom-navigation fixed bottom-0 left-0 z-20 bg-light dark:bg-dark w-full flex items-center justify-evenly sm:hidden h-20')
         li(class='nav-bar-bottom-item text-light-accent dark:text-dark-accent font-bold')
-          NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/')
+          NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/' exact)
             div
               font-awesome-icon(:icon="['fas', 'home']")
             div
@@ -45,13 +45,13 @@
             div
               | Blog
         li(class='nav-bar-bottom-item text-light-accent dark:text-dark-accent font-bold')
-          NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/acerca')
+          NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/acerca' exact)
             div
               font-awesome-icon(:icon="['fas', 'question-circle']")
             div
               | Acerca
         li(class='nav-bar-bottom-item text-light-accent dark:text-dark-accent font-bold')
-          NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/contacto')
+          NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/contacto' exact)
             div
               font-awesome-icon(:icon="['fas', 'paper-plane']")
             div
