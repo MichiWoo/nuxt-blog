@@ -22,10 +22,12 @@
           | {{ p.name }}
         h2(class='text-sm text-light-secondary dark:text-dark-secondary font-bold')
           | {{ p.description }}
+        div(class='flex flex-wrap justify-start items-center')
+          span(v-for="(tag, index) in p.tags" class='text-xs font-medium capitalize bg-light-accent dark:bg-dark-accent py-1 px-1 rounded text-light-primary dark:text-dark-primary align-middle mx-1 my-1')
+            | {{ tag }}&nbsp
         a(class='text-xs text-light-danger dark:text-dark-danger' :href="p.url" target='_blank' rel='noopener noreferer' :alt='p.alt')
           | {{ p.url }}&nbsp
           font-awesome-icon(:icon="['fas', 'link']")
-      div(class='h-24 bg-gradient-to-r from-text-light- via-text-light-primary to-text-light-accent')
     h1(class='text-2xl font-bold text-light-primary dark:text-dark-primary mb-2 mt-8')
       | Habilidades&nbsp
       font-awesome-icon(:icon="['fas', 'tools']")
