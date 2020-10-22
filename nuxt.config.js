@@ -12,7 +12,7 @@ export default {
     ]
   },
   css: [],
-  plugins: [],
+  plugins: ['@/plugins/vue-tooltips.js'],
   components: true,
   buildModules: [
     '@nuxtjs/eslint-module',

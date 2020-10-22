@@ -31,6 +31,11 @@
     h1(class='text-2xl font-bold text-light-primary dark:text-dark-primary mb-2 mt-8')
       | Habilidades&nbsp
       font-awesome-icon(:icon="['fas', 'tools']")
+    section(class='flex justity-center justify-items-center py-6')
+      div(class='items-center grid grid-flow-row grid-cols-3 gap-6 sm:grid-cols-4 w-full')
+        button(class="flex items-center justify-center text-4xl text-light-accent dark:text-dark-accent hover:text-light-primary dark-hover:text-dark-primary" v-for='s in skills' :key='s.id' v-tooltip.bottom.start='s.name')
+          font-awesome-icon(:icon="[s.icon.type, s.icon.name]")
+
 </template>
 
 <script>
@@ -63,10 +68,298 @@ export default {
           tags: ['nuxt', 'frontend', 'javascript', 'tailwind'],
           alt: 'Link a proyecto Michiwoo web'
         }
+      ],
+      skills: [
+        {
+          id: 1,
+          name: 'HTML',
+          icon: {
+            type: 'fab',
+            name: 'html5'
+          }
+        },
+        {
+          id: 2,
+          name: 'JAVASCRIPT',
+          icon: {
+            type: 'fab',
+            name: 'js-square'
+          }
+        },
+        {
+          id: 3,
+          name: 'CSS',
+          icon: {
+            type: 'fab',
+            name: 'css3'
+          }
+        },
+        {
+          id: 4,
+          name: 'VUE',
+          icon: {
+            type: 'fab',
+            name: 'vuejs'
+          }
+        },
+        {
+          id: 5,
+          name: 'GIT',
+          icon: {
+            type: 'fab',
+            name: 'git-alt'
+          }
+        },
+        {
+          id: 6,
+          name: 'PHP',
+          icon: {
+            type: 'fab',
+            name: 'php'
+          }
+        },
+        {
+          id: 7,
+          name: 'LINUX',
+          icon: {
+            type: 'fab',
+            name: 'html5'
+          }
+        },
+        {
+          id: 8,
+          name: 'GITHUB',
+          icon: {
+            type: 'fab',
+            name: 'github'
+          }
+        }
       ]
     }
   }
 }
 </script>
 
-<style scoped></style>
+<style lang='scss'>
+.tooltip {
+  display: block !important;
+  z-index: 10000;
+
+  .tooltip-inner {
+    background: #7009f6;
+    color: #d2c4ff;
+    border-radius: 16px;
+    padding: 5px 10px 4px;
+  }
+
+  .tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: 5px;
+    border-color: #7009f6;
+    z-index: 1;
+  }
+
+  &[x-placement^="top"] {
+    margin-bottom: 5px;
+
+    .tooltip-arrow {
+      border-width: 5px 5px 0 5px;
+      border-left-color: transparent !important;
+      border-right-color: transparent !important;
+      border-bottom-color: transparent !important;
+      bottom: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &[x-placement^="bottom"] {
+    margin-top: 5px;
+
+    .tooltip-arrow {
+      border-width: 0 5px 5px 5px;
+      border-left-color: transparent !important;
+      border-right-color: transparent !important;
+      border-top-color: transparent !important;
+      top: -5px;
+      left: calc(50% - 5px);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &[x-placement^="right"] {
+    margin-left: 5px;
+
+    .tooltip-arrow {
+      border-width: 5px 5px 5px 0;
+      border-left-color: transparent !important;
+      border-top-color: transparent !important;
+      border-bottom-color: transparent !important;
+      left: -5px;
+      top: calc(50% - 5px);
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &[x-placement^="left"] {
+    margin-right: 5px;
+
+    .tooltip-arrow {
+      border-width: 5px 0 5px 5px;
+      border-top-color: transparent !important;
+      border-right-color: transparent !important;
+      border-bottom-color: transparent !important;
+      right: -5px;
+      top: calc(50% - 5px);
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &.popover {
+    $color: #d2c4ff;
+
+    .popover-inner {
+      background: $color;
+      color: #7009f6;
+      padding: 24px;
+      border-radius: 5px;
+      box-shadow: 0 5px 30px rgba(black, .1);
+    }
+
+    .popover-arrow {
+      border-color: $color;
+    }
+  }
+
+  &[aria-hidden='true'] {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .15s, visibility .15s;
+  }
+
+  &[aria-hidden='false'] {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .15s;
+  }
+}
+
+.dark {
+  .tooltip {
+    display: block !important;
+    z-index: 10000;
+
+    .tooltip-inner {
+      background: #a1fff3;
+      color: #3adbb9;
+      border-radius: 16px;
+      padding: 5px 10px 4px;
+    }
+
+    .tooltip-arrow {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      position: absolute;
+      margin: 5px;
+      border-color: #a1fff3;
+      z-index: 1;
+    }
+
+    &[x-placement^="top"] {
+      margin-bottom: 5px;
+
+      .tooltip-arrow {
+        border-width: 5px 5px 0 5px;
+        border-left-color: transparent !important;
+        border-right-color: transparent !important;
+        border-bottom-color: transparent !important;
+        bottom: -5px;
+        left: calc(50% - 5px);
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    &[x-placement^="bottom"] {
+      margin-top: 5px;
+
+      .tooltip-arrow {
+        border-width: 0 5px 5px 5px;
+        border-left-color: transparent !important;
+        border-right-color: transparent !important;
+        border-top-color: transparent !important;
+        top: -5px;
+        left: calc(50% - 5px);
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    &[x-placement^="right"] {
+      margin-left: 5px;
+
+      .tooltip-arrow {
+        border-width: 5px 5px 5px 0;
+        border-left-color: transparent !important;
+        border-top-color: transparent !important;
+        border-bottom-color: transparent !important;
+        left: -5px;
+        top: calc(50% - 5px);
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    &[x-placement^="left"] {
+      margin-right: 5px;
+
+      .tooltip-arrow {
+        border-width: 5px 0 5px 5px;
+        border-top-color: transparent !important;
+        border-right-color: transparent !important;
+        border-bottom-color: transparent !important;
+        right: -5px;
+        top: calc(50% - 5px);
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    &.popover {
+      $color: #3adbb9;
+
+      .popover-inner {
+        background: $color;
+        color: #d0fff9;
+        padding: 24px;
+        border-radius: 5px;
+        box-shadow: 0 5px 30px rgba(#d0fff9, .1);
+      }
+
+      .popover-arrow {
+        border-color: $color;
+      }
+    }
+
+    &[aria-hidden='true'] {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .15s, visibility .15s;
+    }
+
+    &[aria-hidden='false'] {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity .15s;
+    }
+  }
+}
+</style>
