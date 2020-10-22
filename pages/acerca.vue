@@ -7,7 +7,9 @@
         h1(class='text-2xl font-bold text-light-primary dark:text-dark-primary mb-2 mt-2 sm:mt-8')
           | Hola mundo ... !
         p(class='text-base text-justify mb-8 mt-4 text-light-secondary dark:text-dark-secondary')
-          | Soy Michel, desarrollador frontend, empezando a formarme como backend, amante del café ☕️, me encantan las series 📺 y adoro a mis 🐶🐶🐶.
+          | Soy Michel, mejor conocido como
+          b &nbspMichiwoo.
+          | &nbspSoy desarrollador frontend, empiezo a formarme como backend, amante del café ☕️, me encantan las series 📺 y adoro a mis 🐶🐶🐶.
         p(class='text-base text-justify mb-8 mt-4 text-light-secondary dark:text-dark-secondary')
           | Actualmente vivo en México 🇲🇽, mi meta es nunca parar de aprender 👨🏿‍💻
     h1(class='text-2xl font-bold text-light-primary dark:text-dark-primary mb-2 mt-8')

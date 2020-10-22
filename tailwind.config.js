@@ -44,5 +44,10 @@ module.exports = {
     textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'group-hover'],
     gradientColorStops: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive', 'group-hover']
   },
-  plugins: [require('tailwindcss-dark-mode')()]
+  plugins: [require('tailwindcss-dark-mode')()],
+  purge: [
+    './src/**/*.html',
+    './src/**/*.vue',
+    './src/**/*.jsx',
+  ]
 }

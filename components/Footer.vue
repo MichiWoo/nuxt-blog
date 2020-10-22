@@ -15,10 +15,12 @@
         span(class='text-light-primary dark:text-dark-accent')
           | &nbsppor Michiwoo © 2020
       div(class='flex space-x-2 justify-center text-xl mt-2')
-        a(class='social-media-link relative flex flex-col items-center' href='/' title='Twitter')
+        a(class='social-media-link relative flex flex-col items-center' href='https://twitter.com/_michiwoo' title='Twitter' rel='noopener noreferer' target='_blank')
           font-awesome-icon(:icon="['fab', 'twitter']" class='text-light-primary dark:text-dark-accent')
-        a(class='social-media-link relative flex flex-col items-center' href='/' title='Github')
+        a(class='social-media-link relative flex flex-col items-center' href='https://github.com/MichiWoo' title='Github' rel='noopener noreferer' target='_blank')
           font-awesome-icon(:icon="['fab', 'github']" class='text-light-primary dark:text-dark-accent')
+        a(class='social-media-link relative flex flex-col items-center' href='https://www.instagram.com/_michiwoo/' title='Instagram' rel='noopener noreferer' target='_blank')
+          font-awesome-icon(:icon="['fab', 'instagram']" class='text-light-primary dark:text-dark-accent')
         a(class='social-media-link relative flex flex-col items-center' href='/' title='Gmail')
           font-awesome-icon(:icon="['far', 'envelope']" class='text-light-primary dark:text-dark-accent')
 </template>

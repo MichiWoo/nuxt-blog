@@ -55,11 +55,11 @@
 }
 
 .nuxt-content-highlight .filename {
-  @apply absolute right-0 text-light-accent font-light z-10 mr-2 mt-1 text-sm;
+  @apply absolute right-0 text-light-accent font-light z-10 mr-2 mt-1 text-xs;
 }
 
 .dark-mode .nuxt-content-highlight .filename {
-  @apply absolute right-0 text-dark-accent font-light z-10 mr-2 mt-1 text-sm;
+  @apply absolute right-0 text-dark-accent font-light z-10 mr-2 mt-1 text-xs;
 }
 
 .nuxt-content p {
