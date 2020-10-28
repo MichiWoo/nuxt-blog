@@ -13,7 +13,7 @@
       | Soy un desarrollador web&nbsp
       strong full-stack,
       | &nbspvivo en México&nbsp
-      span(role='emoji' aria-label='emoji')
+      span(role='img' aria-label='mexico')
         | 🇲🇽
       | , en el bello estado de Veracruz. Me apasionan las tencologías web, con las que más he trabajado son&nbsp
       b Javascript, Vue, Nuxt, React

@@ -4,7 +4,7 @@
       span
         | Artículos&nbsp
         font-awesome-icon(:icon="['fas', 'feather']" class='text-light-secondary dark:text-dark-secondary')
-    h3(class='text-light-primary text-justify dark:text-dark-accent' v-show='verMensaje')
+    h2(class='text-light-primary text-justify dark:text-dark-accent' v-show='verMensaje')
       span
         | Me gusta compartir un poco de lo que hago, de vez en cuando escribo, aquí estan algunos de los más recientes.
     ul
