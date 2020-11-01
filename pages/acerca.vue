@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class='acerca max-w-full md:max-w-screen-md mx-auto xl:max-w-screen-lg px-5 pb-24 sm:pb-0 w-full mx-auto flex-1 mb-24 sm:mb-0')
+  div(class='acerca max-w-full md:max-w-screen-md mx-auto xl:max-w-screen-lg px-5 pb-24 sm:pb-0 w-full mx-auto flex-1 mb-2 sm:mb-0')
     div(class='flex flex-col md:flex-row')
       div(class='responsive-image-container overflow-hidden inline-block mt-8 w-48 h-48 mr-0 mb-12 sm:mb-16 rounded-full shadow-sm self-center md:mr-20 md:mb-8')
         img(class='object-cover' src="/avatarMichiwoo.jpg")
