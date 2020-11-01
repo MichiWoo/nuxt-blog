@@ -58,7 +58,7 @@ export default {
           id: 2,
           name: 'Covid Monitor',
           description: 'Aplicación para visualizar el estado actual de la pandemia mundial, contruída con Vue.',
-          url: 'https://covid-monitor.netlify.app',
+          url: 'https://covid19-monitor.netlify.app',
           tags: ['vue', 'frontend', 'javascript'],
           alt: 'Link a proyecto Covid Monitor'
         },
@@ -66,7 +66,7 @@ export default {
           id: 3,
           name: 'Michiwoo web',
           description: 'Sitio web y blog personal, realizado con Nuxt.',
-          url: 'https://blog-michiwoo.netlify.app',
+          url: 'https://michiwoo.netlify.app',
           tags: ['nuxt', 'frontend', 'javascript', 'tailwind'],
           alt: 'Link a proyecto Michiwoo web'
         }
