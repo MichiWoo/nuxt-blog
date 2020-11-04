@@ -8,7 +8,7 @@
       | y&nbsp
       font-awesome-icon(:icon="['fas', 'heart']" class='text-light-secondary dark:text-dark-secondary')
       | &nbspel desarrollo web.
-    Frontend(class='w-full')
+    Develop(class='w-full')
     p(class='text-base text-justify mb-8 mt-4 text-light-primary dark:text-dark-accent')
       | Soy un desarrollador web&nbsp
       strong full-stack,
@@ -38,7 +38,7 @@
 export default {
   name: 'Home',
   components: {
-    Frontend: () => import('../components/images/Frontend')
+    Develop: () => import('../components/images/Develop')
   },
   props: {
     articles: {
