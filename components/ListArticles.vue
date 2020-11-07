@@ -3,7 +3,7 @@
     h1(class='text-2xl font-bold mb-2 mt-8 text-light-primary dark:text-dark-primary' v-show='verMensaje')
       span
         | Artículos&nbsp
-        font-awesome-icon(:icon="['fas', 'feather']" class='text-light-secondary dark:text-dark-secondary')
+        Pencil(class='text-light-secondary dark:text-dark-secondary inline')
     h2(class='text-light-primary text-justify dark:text-dark-accent' v-show='verMensaje')
       span
         | Me gusta compartir un poco de lo que hago, de vez en cuando escribo, aquí estan algunos de los más recientes.
@@ -16,7 +16,8 @@
 export default {
   name: 'ListArticles',
   components: {
-    Article: () => import('../components/Article')
+    Article: () => import('../components/Article'),
+    Pencil: () => import('../components/icons/Pencil')
   },
   props: {
     config: {

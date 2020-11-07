@@ -5,9 +5,11 @@
         | 👋
       | &nbspsoy Michel&nbsp
       br
-      | y&nbsp
-      font-awesome-icon(:icon="['fas', 'heart']" class='text-light-secondary dark:text-dark-secondary')
-      | &nbspel desarrollo web.
+      strong
+        | y&nbsp
+        span
+          Hearth(class='text-light-secondary dark:text-dark-secondary inline')
+        | &nbspel desarrollo web.
     Develop(class='w-full')
     p(class='text-base text-justify mb-8 mt-4 text-light-primary dark:text-dark-accent')
       | Soy un desarrollador web&nbsp
@@ -38,7 +40,8 @@
 export default {
   name: 'Home',
   components: {
-    Develop: () => import('../components/images/Develop')
+    Develop: () => import('../components/images/Develop'),
+    Hearth: () => import('../components/icons/Hearth')
   },
   props: {
     articles: {

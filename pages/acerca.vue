@@ -32,7 +32,7 @@
           font-awesome-icon(:icon="['fas', 'link']")
     h1(class='text-2xl font-bold text-light-primary dark:text-dark-primary mb-2 mt-8')
       | Habilidades&nbsp
-      font-awesome-icon(:icon="['fas', 'tools']")
+      Command(class='inline')
     section(class='flex justity-center justify-items-center py-6')
       div(class='items-center grid grid-flow-row grid-cols-3 gap-6 sm:grid-cols-4 w-full')
         button(class="flex items-center justify-center text-4xl text-light-accent dark:text-dark-accent hover:text-light-primary dark-hover:text-dark-primary" v-for='s in skills' :key='s.id' v-tooltip.bottom.start='s.name')
@@ -43,6 +43,9 @@
 <script>
 export default {
   name: 'Acerca',
+  components: {
+    Command: () => import('../components/icons/Command')
+  },
   data () {
     return {
       proyects: [
@@ -125,7 +128,7 @@ export default {
           name: 'LINUX',
           icon: {
             type: 'fab',
-            name: 'html5'
+            name: 'linux'
           }
         },
         {
@@ -134,6 +137,46 @@ export default {
           icon: {
             type: 'fab',
             name: 'github'
+          }
+        },
+        {
+          id: 9,
+          name: 'UBUNTU',
+          icon: {
+            type: 'fab',
+            name: 'ubuntu'
+          }
+        },
+        {
+          id: 10,
+          name: 'Bootstrap',
+          icon: {
+            type: 'fab',
+            name: 'bootstrap'
+          }
+        },
+        {
+          id: 11,
+          name: 'NODE',
+          icon: {
+            type: 'fab',
+            name: 'node-js'
+          }
+        },
+        {
+          id: 12,
+          name: 'REACT',
+          icon: {
+            type: 'fab',
+            name: 'react'
+          }
+        },
+        {
+          id: 13,
+          name: 'DOCKER',
+          icon: {
+            type: 'fab',
+            name: 'docker'
           }
         }
       ]

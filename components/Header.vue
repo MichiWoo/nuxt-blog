@@ -11,16 +11,16 @@
                 | Michiwoo
           li(class='sm:hidden')
             button(class='text-light-primary transition-colors duration-300 ease-linear focus:outline-none' @click="toggle" v-show="color === 'light'" aria-label="Modo Oscuro")
-              font-awesome-icon(:icon="['fas', 'moon']")
+              Moon
             button(class='text-dark-primary transition-colors duration-300 ease-linear focus:outline-none' @click="toggle" v-show="color === 'dark'" aria-label="Modo Light")
-              font-awesome-icon(:icon="['fas', 'sun']")
+              Gear
         div(class='flex-1 hidden sm:block')
         ul(class='top-navigation hidden items-center flex-wrap space-x-4 sm:space-x-6 mt-6 sm:mt-0 hidden sm:flex')
           li
             button(class='text-light-accent transition-colors duration-300 ease-linear focus:outline-none hover:text-light-primary' @click="toggle" v-show="color === 'light'" aria-label="Modo Oscuro")
-              font-awesome-icon(:icon="['fas', 'moon']")
+              Moon
             button(class='text-dark-accent transition-colors duration-300 ease-linear focus:outline-none dark-hover:text-dark-primary' @click="toggle" v-show="color === 'dark'" aria-label="Modo Light")
-              font-awesome-icon(:icon="['fas', 'sun']")
+              Gear
           li
             NuxtLink(class='border-b-2 font-bold border-transparent border-b-transparent text-light-danger hover:text-light-primary hover:border-light-primary dark:text-dark-accent dark-hover:border-dark-secondary dark-hover:text-dark-primary text-base transition-all transition-duration-300 transition duration-500 ease-in-out' to='/blog')
               | Blog
@@ -35,19 +35,19 @@
         li(class='nav-bar-bottom-item text-light-secondary dark:text-dark-accent font-bold')
           NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/' exact)
             div
-              font-awesome-icon(:icon="['fas', 'home']")
+              House
             div
               | Home
         li(class='nav-bar-bottom-item text-light-secondary dark:text-dark-danger font-bold')
           NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/blog')
             div
-              font-awesome-icon(:icon="['fas', 'feather']")
+              Pencil
             div
               | Blog
         li(class='nav-bar-bottom-item text-light-secondary dark:text-dark-accent font-bold')
           NuxtLink(class='flex flex-col items-center justify-center flex-nowrap transition transition-all duration-500 ease-in-out' to='/acerca' exact)
             div
-              font-awesome-icon(:icon="['fas', 'question-circle']")
+              Question
             div
               | Acerca
         li(class='nav-bar-bottom-item text-light-secondary dark:text-dark-accent font-bold')
@@ -57,12 +57,16 @@
             div
               | Contacto
 </template>
-
 <script>
 export default {
   name: 'Header',
   components: {
-    Logo: () => import('../components/Logo')
+    Logo: () => import('../components/Logo'),
+    Gear: () => import('../components/icons/Gear'),
+    Moon: () => import('../components/icons/Moon'),
+    House: () => import('../components/icons/House'),
+    Pencil: () => import('../components/icons/Pencil'),
+    Question: () => import('../components/icons/Question')
   },
   data () {
     return {
